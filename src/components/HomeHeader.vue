@@ -20,7 +20,9 @@
             Startup Framework gives you complete freedom over your creative process — you don’t have to
             think about any technical aspects. There are no limits and absolutely no coding.
         </p>
-        <button class="bg-[#482be7] px-9 py-4 rounded-[100px]">Create an Account</button>
+        <button class="bg-[#482be7] px-9 py-4 rounded-[100px] hover:bg-blue-500 transition duration-200 ease-in-out">
+            Create an Account
+        </button>
     </div>
 </template>
 
