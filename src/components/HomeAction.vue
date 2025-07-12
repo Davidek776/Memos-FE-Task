@@ -11,10 +11,10 @@
         Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework for faster and easier web development.
         </p>
         <div class="flex gap-7 pt-14">
-            <button class="bg-[#ea3223] rounded-full w-17 h-17 hover:bg-red-400 transition duration-400 ease-in-out">
+            <button class="bg-[#ea3223] rounded-full w-17 h-17 hover:bg-red-400 transition duration-400 ease-in-out cursor-pointer">
                 <font-awesome-icon icon="fa-solid fa-play" class="text-base"/>
             </button>
-             <button class="bg-[#25dac5] rounded-[100px] px-13 py-5 hover:bg-teal-200 transition duration-400 ease-in-out">
+             <button class="bg-[#25dac5] rounded-[100px] px-13 py-5 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer">
                 <p class="text-xl font-medium">Get Started</p>
             </button>
         </div>
