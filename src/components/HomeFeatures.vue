@@ -1,6 +1,7 @@
 <template>
     <div
     class="bg-[url('@/assets/Features_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[19/10] bg-[#2e1893d9] bg-blend-lighten flex items-center"
+    id="featuresSection"
     >
       <img src="@/assets/Laptop.svg" alt="" class="h-[70%]">
       <div class="flex flex-col pl-14">
