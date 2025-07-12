@@ -1,8 +1,5 @@
 <template>
-  <div class="w-full">
-    <p>dsaasdas</p>
-  </div>
-  <!-- <HomeHeader /> -->
+  <HomeHeader />
 </template>
 
 <script setup lang="ts">
