@@ -15,8 +15,8 @@
             </a>
         </div>
         <h3 class="text-xl font-bold pt-35">Startup 3</h3>
-        <p class="text-7xl font-bold pt-5">Forget About Code</p>
-        <p class="w-184 text-center pt-5 pb-28 text-xl">
+        <p class="text-7xl font-bold pt-7">Forget About Code</p>
+        <p class="w-184 text-center pt-7 pb-28 text-[22px]">
             Startup Framework gives you complete freedom over your creative process — you don’t have to
             think about any technical aspects. There are no limits and absolutely no coding.
         </p>
