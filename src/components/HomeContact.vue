@@ -40,8 +40,18 @@
                 </div>
             </div>
               <div class="w-full">
-                    <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
-                    <input type="email" placeholder="name@mail.com" class="outline-[#ebeaed] outline-2 rounded-4xl w-full h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6">
+                <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
+                <input type="email" placeholder="name@mail.com" class="outline-[#ebeaed] outline-2 rounded-4xl w-full h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6">
+                </div>
+                <div class="w-full">
+                    <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR MESSAGE</p>
+                    <textarea placeholder="Message" class="outline-[#ebeaed] outline-2 rounded-[10px] w-full h-28 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] px-5 py-3 resize-none"/>
+                </div>
+                <div class="flex">
+                    <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 checked:bg-amber-300 checked:border-transparent" />
+                    <span class="text-gray-700">Send me a copy</span>
+                    </label>
                 </div>
         </div>
     </div>
