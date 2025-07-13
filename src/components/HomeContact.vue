@@ -21,15 +21,15 @@
             </p>
         </a>
         </div>
-        <div class="bg-white rounded-[10px] h-120 pt-14.5 px-12.5 flex flex-col items-center">
+        <div class="bg-white rounded-[10px] h-120 pt-14.5 px-12.5 flex flex-col items-center gap-8.5">
             <div class="flex justify-center items-center gap-7.5">
                 <div>
                     <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR NAME</p>
-                    <input type="text" placeholder="First name" class="outline-[#ebeaed] outline-2 rounded-4xl w-50 h-12 placeholder:text-[#15143966] text-lg text-[#15143966] pl-6">
+                    <input type="text" placeholder="First name" class="outline-[#ebeaed] outline-2 rounded-4xl w-50 h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6">
                 </div>
                 <div>
                     <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">BUDGET</p>
-                    <select id="countries" class="outline-[#ebeaed] outline-2 rounded-4xl w-35 h-12 placeholder:text-[#15143966] text-lg text-[#15143966] pl-6 border-r-24 border-transparent ">
+                    <select id="countries" class="outline-[#ebeaed] outline-2 focus:outline-stone-400 rounded-4xl w-35 h-12 placeholder:text-[#15143966] text-lg text-[#1e0e62]  pl-6 border-r-24 border-transparent ">
                         <option selected>$500</option>
                         <option value="$1000">$1000</option>
                         <option value="$2000">$2000</option>
@@ -39,6 +39,10 @@
                     </select>
                 </div>
             </div>
+              <div class="w-full">
+                    <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
+                    <input type="email" placeholder="name@mail.com" class="outline-[#ebeaed] outline-2 rounded-4xl w-full h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6">
+                </div>
         </div>
     </div>
 </template>
