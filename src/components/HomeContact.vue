@@ -25,7 +25,11 @@
             <div class="flex justify-center items-center gap-7.5">
                 <div>
                     <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR NAME</p>
-                    <input type="text" placeholder="First name" class="outline-[#ebeaed] outline-2 rounded-4xl w-50 h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6">
+                    <input 
+                        type="text" 
+                        placeholder="First name" 
+                        class="outline-[#ebeaed] outline-2 rounded-4xl w-50 h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6"
+                    >
                 </div>
                 <div>
                     <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">BUDGET</p>
@@ -41,7 +45,11 @@
             </div>
               <div class="w-full pt-8.5">
                 <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
-                <input type="email" placeholder="name@mail.com" class="outline-[#ebeaed] outline-2 rounded-4xl w-full h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6">
+                <input 
+                    type="email" 
+                    placeholder="name@mail.com" 
+                    class="outline-[#ebeaed] outline-2 rounded-4xl w-full h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6"
+                >
                 </div>
                 <div class="w-full pt-8.5">
                     <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR MESSAGE</p>
@@ -49,13 +57,14 @@
                 </div>
                 <div class="flex justify-between items-center w-full pt-7 pb-14">
                   <label class="flex items-center space-x-2 cursor-pointer gap-3">
-                    <input type="checkbox" class="form-checkbox h-5 w-5 text-amber-500 accent-[#25dac5] rounded-4xl cursor-pointer"/>
-                    <span class="text-[#15143966] text-base font-normal">Send me a copy</span>
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-amber-500 accent-[#25dac5] rounded-4xl cursor-pointer"/>
+                            <span class="text-[#15143966] text-base font-normal">Send me a copy</span>
                     </label>
-                 <button class="bg-[#25dac5] rounded-[100px] px-9.5 py-3 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer">
-                <p class="text-xl font-medium">Send</p>
-            </button>
-                </div>
+                 <button 
+                    class="bg-[#25dac5] rounded-[100px] px-9.5 py-3 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer">
+                    <p class="text-xl font-medium">Send</p>
+                </button>
+            </div>
         </div>
     </div>
 </template>
