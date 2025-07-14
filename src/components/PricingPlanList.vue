@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center border-2 border-[#fff5] rounded-[10px] pt-16 pb-14 px-[4%]">
+    <div class="flex flex-col items-center border-2 border-[#fff5] rounded-[10px] pt-7 md:pt-16 pb-7 md:pb-14 px-[20%] md:px-[4%]">
         <div class="">
             <h3 class="text-lg lg:text-[22px] font-medium">{{ pricingPlan.type }}</h3>
             <p class="text-5xl lg:text-6xl font-bold inline-flex items-start py-8">

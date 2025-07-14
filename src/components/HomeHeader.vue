@@ -14,7 +14,7 @@
         </div>
         <h3 class="text-base lg:text-lg font-bold lg:pt-35">Startup 3</h3>
         <p class="text-6xl lg:text-7xl font-bold lg:pt-7">Forget About Code</p>
-        <p class="w-184 text-center lg:pt-7 lg:pb-14 xl:pb-28 text-lg lg:text-[22px]">
+        <p class="px-5 md:px-0 md:w-184 text-center lg:pt-7 lg:pb-14 xl:pb-28 text-lg lg:text-[22px]">
             Startup Framework gives you complete freedom over your creative process — you don’t have to
             think about any technical aspects. There are no limits and absolutely no coding.
         </p>

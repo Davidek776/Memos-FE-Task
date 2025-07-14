@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#2f1893] px-28">
+    <div class="bg-[#2f1893] px-10 md:px-28">
         <div class="flex justify-between py-12 border-b-2 border-[#fff5]">
             <div>
                 <h6 class="text-xl lg:text-2xl font-bold">Startup 3</h6>
@@ -18,7 +18,7 @@
                 </a>
             </div>
         </div>
-        <div class="flex justify-between py-12">
+        <div class="flex flex-col lg:flex-row gap-7 lg:gap-0 justify-between py-12">
            <div class="flex gap-7">
                 <a href="" @click.prevent="" class="text-sm lg:text-base font-normal">Tour</a>
                 <a href="" @click.prevent="" class="text-sm lg:text-base font-normal">Features</a>
