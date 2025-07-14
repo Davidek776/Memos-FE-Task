@@ -1,7 +1,7 @@
 <template>
     <div class="bg-[#2f1893] flex flex-col items-center justify-center py-25" id="pricingSection">
-        <h1 class="text-[42px] font-bold ">Plans & Pricing</h1>
-        <p class="text-[22px] font-medium w-146 pt-7.5 text-center">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
+        <h1 class="text-4xl lg:text-[42px] font-bold ">Plans & Pricing</h1>
+        <p class="text-lg lg:text-[22px] font-medium w-146 pt-7.5 text-center">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
         <div class="flex w-full gap-7.5 justify-center pt-13.5">
             <Pricing-plan-list 
                 :pricingPlanItems="starterPlanItems"
@@ -15,8 +15,8 @@
                 :price="19.99"
 
             >
-                <button class="bg-[#e93a7d] rounded-[100px] px-15 py-4 hover:bg-[#fa7bac] transition duration-400 ease-in-out cursor-pointer">
-                    <p class="text-xl font-medium">Get Started</p>
+                <button class="bg-[#e93a7d] rounded-[100px] px-10 lg:px-15 py-3 lg:py-4 hover:bg-[#fa7bac] transition duration-400 ease-in-out cursor-pointer">
+                    <p class="text-lg lg:text-xl font-medium">Get Started</p>
                 </button>
             </Pricing-plan-list>
             <Pricing-plan-list 

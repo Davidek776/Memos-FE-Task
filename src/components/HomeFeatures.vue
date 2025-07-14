@@ -4,7 +4,7 @@
     id="featuresSection"
     >
       <img src="@/assets/Laptop.svg" alt="" class="h-[70%]">
-      <div class="flex flex-col pl-14">
+      <div class="flex flex-col p-5 lg:pl-14">
         <h3 class="text-4xl lg:text-[42px] font-bold">We Create Something New</h3>
         <p class="text-lg lg:text-[22px] font-medium lg:w-150 pt-5">
             We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.

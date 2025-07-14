@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col items-center border-2 border-[#fff5] rounded-[10px] pt-16 pb-14 px-[4%]">
         <div class="">
-            <h3 class="text-[22px] font-medium">{{ planType }}</h3>
-            <p class="text-6xl font-bold inline-flex items-start py-8">
+            <h3 class="text-lg lg:text-[22px] font-medium">{{ planType }}</h3>
+            <p class="text-5xl lg:text-6xl font-bold inline-flex items-start py-8">
                 {{ price }}
-                <sup class="text-base font-normal p-2">$</sup>
+                <sup class="text-sm lg:text-base font-normal p-2">$</sup>
             </p>
             <ul class="pb-7.5">
                 <li 
@@ -22,8 +22,8 @@
                 </li>
             </ul>
             <slot>
-                <button class="bg-transparent border-2 border-[#fff5] rounded-[100px] px-15 py-4 hover:bg-[#fff] hover:text-zinc-900 transition duration-400 ease-in-out cursor-pointer">
-                    <p class="text-xl font-medium">Get Started</p>
+                <button class="bg-transparent border-2 border-[#fff5] rounded-[100px] px-10 lg:px-15 py-3 lg:py-4 hover:bg-[#fff] hover:text-zinc-900 transition duration-400 ease-in-out cursor-pointer">
+                    <p class="text-lg lg:text-xl font-medium">Get Started</p>
                 </button>
             </slot>
         </div>
