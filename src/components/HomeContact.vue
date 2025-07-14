@@ -4,19 +4,19 @@
     >
     <div class="flex justify-center">
         <div class="flex flex-col items-start lg:items-center lg:block pb-16 lg:pb-0">
-            <h2 class="text-[42px] font-bold">Let’s Keep in Touch</h2>
-            <p class="text-[22px] font-medium w-100 pt-7">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+            <h2 class="text-xl sm:text-4xl lg:text-[42px] font-bold">Let’s Keep in Touch</h2>
+            <p class="text-xs sm:text-lg lg:text-[22px]font-medium w-100 pt-7">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
             <a href="tel:15555055050" class="flex text-lg gap-4 pt-13">
-                <font-awesome-icon icon="fa-solid fa-phone text-base text-lg" />
-                <p class="text-base">+1 555 505 5050</p>
+                <font-awesome-icon icon="fa-solid fa-phone text-base text-base lg:text-lg" />
+                <p class="text-sm lg:text-base">+1 555 505 5050</p>
             </a>
-            <a href="mailto:info@designmodo.com" class="flex text-lg gap-4 pt-8">
+            <a href="mailto:info@designmodo.com" class="flex text-base lg:text-lg gap-4 pt-8">
                 <font-awesome-icon icon="fa-solid fa-envelope text-lg" />
-                <p class="text-base">info@designmodo.com</p>
+                <p class="text-sm lg:text-base">info@designmodo.com</p>
             </a>
             <a href="" class="flex text-lg gap-4 pt-8">
-                <font-awesome-icon icon="fa-regular fa-building text-lg" />
-                <p class="text-base">San Francisco, CA560 Bush St & 
+                <font-awesome-icon icon="fa-regular fa-building text-base lg:text-lg" />
+                <p class="text-sm lg:text-base">San Francisco, CA560 Bush St & 
                     <br>20th Ave, Apt5 San Francisco, 
                     <br> 230909
                 </p>
@@ -24,10 +24,10 @@
         </div>
     </div>
         <div class="flex justify-center">
-            <div class="bg-white rounded-[10px] pt-14.5 px-2 px-12.5 flex flex-col items-center w-120 lg:w-auto">
+            <div class="bg-white rounded-[10px] pt-14.5 px-12.5 flex flex-col items-center w-120 lg:w-auto">
                 <div class="flex justify-center items-center gap-7.5">
                     <div>
-                        <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR NAME</p>
+                        <p class="text-[#1e0e62] text-xs md:text-sm pb-1.5 font-bold tracking-widest">YOUR NAME</p>
                         <input 
                             type="text" 
                             placeholder="First name" 
@@ -37,7 +37,7 @@
                         <p v-if="v$.form.name.$error" class="text-red-500 text-sm">Name is required.</p>
                     </div>
                     <div>
-                        <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">BUDGET</p>
+                        <p class="text-[#1e0e62] text-xs md:text-sm pb-1.5 font-bold tracking-widest">BUDGET</p>
                         <select 
                             v-model="form.budget"
                             class="outline-[#ebeaed] outline-2 focus:outline-stone-400 rounded-4xl w-35 h-12 placeholder:text-[#15143966] text-lg text-[#1e0e62]  pl-6 border-r-24 border-transparent "
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="w-full pt-8.5">
-                    <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
+                    <p class="text-[#1e0e62] text-xs md:text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
                     <input 
                         type="email" 
                         placeholder="name@mail.com" 
@@ -62,7 +62,7 @@
                     <p v-if="v$.form.email.$error" class="text-red-500 text-sm">Valid email is required.</p>
                 </div>
                 <div class="w-full pt-8.5">
-                    <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR MESSAGE</p>
+                    <p class="text-[#1e0e62] text-xs md:text-sm pb-1.5 font-bold tracking-widest">YOUR MESSAGE</p>
                     <textarea 
                         placeholder="Message" 
                         v-model="form.message"
