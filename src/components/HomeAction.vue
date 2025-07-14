@@ -1,6 +1,6 @@
 <template>
    <div
-    class="bg-[url('@/assets/Action_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[2.314] bg-[#2e1893d9] bg-blend-lighten flex flex-col items-center justify-center"
+    class="bg-[url('@/assets/Action_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[2.314] bg-[#2e1893d9] bg-blend-lighten flex flex-col items-center justify-center py-10 md:py-0"
     >
         <h2 class="text-5xl lg:text-6xl font-bold text-center">
             Easy to setup. <br>
