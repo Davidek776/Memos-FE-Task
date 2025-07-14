@@ -1,14 +1,14 @@
 <template>
     <div class="flex flex-col items-center border-2 border-[#fff5] rounded-[10px] pt-16 pb-14 px-[4%]">
         <div class="">
-            <h3 class="text-lg lg:text-[22px] font-medium">{{ planType }}</h3>
+            <h3 class="text-lg lg:text-[22px] font-medium">{{ pricingPlan.type }}</h3>
             <p class="text-5xl lg:text-6xl font-bold inline-flex items-start py-8">
-                {{ price }}
+                {{ pricingPlan.price }}
                 <sup class="text-sm lg:text-base font-normal p-2">$</sup>
             </p>
             <ul class="pb-7.5">
                 <li 
-                    v-for="item in pricingPlanItems"
+                    v-for="item in pricingPlan.items"
                     :key="item.name"
                     class="flex items-center gap-3.5" 
                 >
@@ -31,12 +31,10 @@
 </template>
 
 <script setup lang="ts">
-import type { PricingPlanItem } from './HomePricing.vue';
+import type { PricingPlan } from './HomePricing.vue';
 
 defineProps<{
-    planType: string,
-    price: number,
-    pricingPlanItems: PricingPlanItem[]
+    pricingPlan: PricingPlan
 }>()
 
 </script>
