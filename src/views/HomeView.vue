@@ -4,6 +4,7 @@
   <Home-action/>
   <Home-contact/>
   <Home-pricing/>
+  <Home-footer/>
 </template>
 
 <script setup lang="ts">
@@ -12,4 +13,5 @@
   import HomeAction from "@/components/HomeAction.vue";
   import HomeContact from "@/components/HomeContact.vue";
   import HomePricing from "@/components/HomePricing.vue";
+  import HomeFooter from "@/components/HomeFooter.vue";
 </script>

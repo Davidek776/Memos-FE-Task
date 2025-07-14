@@ -1,14 +1,14 @@
 <template>
     <div class="bg-[url('@/assets/Header_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[28/17] bg-[#2e1893d9] bg-blend-lighten flex flex-col items-center">
         <div class="flex justify-center pt-21 gap-11">
-            <a href="" class="text-lg font-medium" >Home</a>
+            <a href="" class="text-lg font-medium" @click.prevent="">Home</a>
             <a href="" class="text-lg font-medium" @click.prevent="scrollToSection('featuresSection')">Features</a>
             <a href="" class="text-lg font-medium" @click.prevent="scrollToSection('pricingSection')">Pricing</a>
-            <a href="" class="text-lg font-medium">Blog</a>
-            <a href="" class="text-lg font-medium">
+            <a href="" class="text-lg font-medium" @click.prevent="">Blog</a>
+            <a href="" class="text-lg font-medium" @click.prevent="">
                 <font-awesome-icon icon="fa-solid fa-basketball" class="text-lg" />
             </a>
-            <a href="" class="text-lg">
+            <a href="" class="text-lg" @click.prevent="">
                 <font-awesome-icon icon="fa-brands fa-behance" class="text-lg" />
             </a>
         </div>
