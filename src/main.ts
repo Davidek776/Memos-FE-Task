@@ -2,6 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import PrimeVue from 'primevue/config';
+import Aura from '@primeuix/themes/aura';
 import App from './App.vue'
 import router from './router'
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
@@ -16,7 +17,11 @@ dom.watch();
 const app = createApp(App)
 
 app.use(router)
-app.use(PrimeVue);
+app.use(PrimeVue,{
+     theme: {
+        preset: Aura
+    }
+});
 
 app.mount('#app')
 app.component("font-awesome-icon", FontAwesomeIcon)
