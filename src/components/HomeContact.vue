@@ -28,40 +28,57 @@
                     <input 
                         type="text" 
                         placeholder="First name" 
+                        v-model="form.name"
                         class="outline-[#ebeaed] outline-2 rounded-4xl w-50 h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6"
                     >
+                    <p v-if="v$.form.name.$error" class="text-red-500 text-sm">Name is required.</p>
                 </div>
                 <div>
                     <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">BUDGET</p>
-                    <select id="countries" class="outline-[#ebeaed] outline-2 focus:outline-stone-400 rounded-4xl w-35 h-12 placeholder:text-[#15143966] text-lg text-[#1e0e62]  pl-6 border-r-24 border-transparent ">
-                        <option selected>$500</option>
-                        <option value="$1000">$1000</option>
-                        <option value="$2000">$2000</option>
-                        <option value="$5000">$5000</option>
-                        <option value="$7000">$7000</option>
-                     
+                    <select 
+                        v-model="form.budget"
+                        class="outline-[#ebeaed] outline-2 focus:outline-stone-400 rounded-4xl w-35 h-12 placeholder:text-[#15143966] text-lg text-[#1e0e62]  pl-6 border-r-24 border-transparent "
+                        >
+                            <option selected>$500</option>
+                            <option value="$1000">$1000</option>
+                            <option value="$2000">$2000</option>
+                            <option value="$5000">$5000</option>
+                            <option value="$7000">$7000</option>
                     </select>
+                    <p v-if="v$.form.budget.$error" class="text-red-500 text-sm">Budget is required.</p>
                 </div>
             </div>
-              <div class="w-full pt-8.5">
+            <div class="w-full pt-8.5">
                 <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">INPUT FIELD</p>
                 <input 
                     type="email" 
                     placeholder="name@mail.com" 
+                    v-model="form.email"
                     class="outline-[#ebeaed] outline-2 rounded-4xl w-full h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6"
                 >
-                </div>
-                <div class="w-full pt-8.5">
-                    <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR MESSAGE</p>
-                    <textarea placeholder="Message" class="outline-[#ebeaed] outline-2 rounded-[10px] w-full h-28 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] px-5 py-3 resize-none"/>
-                </div>
-                <div class="flex justify-between items-center w-full pt-7 pb-14">
-                  <label class="flex items-center space-x-2 cursor-pointer gap-3">
-                        <input type="checkbox" class="form-checkbox h-5 w-5 text-amber-500 accent-[#25dac5] rounded-4xl cursor-pointer"/>
-                            <span class="text-[#15143966] text-base font-normal">Send me a copy</span>
-                    </label>
-                 <button 
-                    class="bg-[#25dac5] rounded-[100px] px-9.5 py-3 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer">
+                <p v-if="v$.form.email.$error" class="text-red-500 text-sm">Valid email is required.</p>
+            </div>
+            <div class="w-full pt-8.5">
+                <p class="text-[#1e0e62] text-sm pb-1.5 font-bold tracking-widest">YOUR MESSAGE</p>
+                <textarea 
+                    placeholder="Message" 
+                    v-model="form.message"
+                    class="outline-[#ebeaed] outline-2 rounded-[10px] w-full h-28 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] px-5 py-3 resize-none"
+                />
+                <p v-if="v$.form.message.$error" class="text-red-500 text-sm">Message is required.</p>
+            </div>
+            <div class="flex justify-between items-center w-full pt-7 pb-14">
+                <label class="flex items-center space-x-2 cursor-pointer gap-3">
+                    <input 
+                        type="checkbox" 
+                        v-model="form.copy"
+                        class="form-checkbox h-5 w-5 text-amber-500 accent-[#25dac5] rounded-4xl cursor-pointer"/>
+                        <span class="text-[#15143966] text-base font-normal">Send me a copy</span>
+                </label>
+                <button 
+                    @click="submitForm"
+                    class="bg-[#25dac5] rounded-[100px] px-9.5 py-3 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer"
+                >
                     <p class="text-xl font-medium">Send</p>
                 </button>
             </div>
@@ -70,4 +87,42 @@
 </template>
 
 <script setup lang="ts">
+import { reactive } from 'vue'
+import useVuelidate from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
+
+const form = reactive({
+  name: '',
+  budget: '$500',
+  email: '',
+  message: '',
+  copy: false,
+})
+
+const rules = {
+  form: {
+    name: { required },
+    budget: { required },
+    email: { required, email },
+    message: { required },
+    copy: {},
+  }
+}
+
+const v$ = useVuelidate(rules, { form })
+
+const submitForm = async () => {
+  v$.value.$touch()
+  if (!v$.value.$invalid) {
+    alert('Form Submitted:\n' + JSON.stringify(form, null, 2))
+
+    form.name = ''
+    form.budget = ''
+    form.email = ''
+    form.message = ''
+    form.copy = false
+
+    v$.value.$reset()
+  }
+}
 </script>
