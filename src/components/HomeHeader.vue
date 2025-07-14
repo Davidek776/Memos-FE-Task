@@ -3,7 +3,7 @@
         <div class="flex justify-center pt-21 gap-11">
             <a href="" class="text-lg font-medium" >Home</a>
             <a href="" class="text-lg font-medium" @click.prevent="scrollToSection('featuresSection')">Features</a>
-            <a href="" class="text-lg font-medium">Pricing</a>
+            <a href="" class="text-lg font-medium" @click.prevent="scrollToSection('pricingSection')">Pricing</a>
             <a href="" class="text-lg font-medium">Blog</a>
             <a href="" class="text-lg font-medium">
                 <font-awesome-icon icon="fa-solid fa-basketball" class="text-lg" />
