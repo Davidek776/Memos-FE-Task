@@ -1,9 +1,10 @@
 <template>
     <div class="flex flex-col items-center border-2 border-[#fff5] rounded-[10px] pt-16 pb-14 px-[4%]">
         <div class="">
-            <h3 class="text-[22px] font-medium pb-5">{{ planType }}</h3>
-            <p class="text-6xl font-bold inline-flex items-start">9.99 
-            <sup class="text-base font-normal p-2">$</sup>
+            <h3 class="text-[22px] font-medium">{{ planType }}</h3>
+            <p class="text-6xl font-bold inline-flex items-start py-8">
+                {{ price }}
+                <sup class="text-base font-normal p-2">$</sup>
             </p>
             <ul class="pb-7.5">
                 <li 
@@ -34,6 +35,7 @@ import type { PricingPlanItem } from './HomePricing.vue';
 
 defineProps<{
     planType: string,
+    price: number,
     pricingPlanItems: PricingPlanItem[]
 }>()
 

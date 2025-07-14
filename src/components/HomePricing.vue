@@ -6,18 +6,23 @@
             <Pricing-plan-list 
                 :pricingPlanItems="starterPlanItems"
                 planType="Starter"
+                :price="9.99"
+
             />
             <Pricing-plan-list 
-                :pricingPlanItems="starterPlanItems"
-                planType="Starter"
+                :pricingPlanItems="profesionalPlanItems"
+                planType="Professional"
+                :price="19.99"
+
             >
                 <button class="bg-[#e93a7d] rounded-[100px] px-15 py-4 hover:bg-[#fa7bac] transition duration-400 ease-in-out cursor-pointer">
                     <p class="text-xl font-medium">Get Started</p>
                 </button>
             </Pricing-plan-list>
             <Pricing-plan-list 
-                :pricingPlanItems="starterPlanItems"
-                planType="Starter"
+                :pricingPlanItems="teamPlanItems"
+                planType="Team"
+                :price="49.99"
             />
         </div>
     </div>
@@ -72,6 +77,92 @@ const starterPlanItems: PricingPlanItem[] = [
     {
         name: 'User management',
         isIncluded: false
+    }
+]
+
+const profesionalPlanItems: PricingPlanItem[] = [
+    {
+        name: '2 GB of space',
+        isIncluded: true
+    },
+    {
+        name: '14 days of backups',
+        isIncluded: true
+    },
+    {
+        name: 'Social integrations',
+        isIncluded: true
+    },
+    {
+        name: 'Client billing',
+        isIncluded: true
+    },
+    {
+        name: 'Remote access',
+        isIncluded: true
+    },
+    {
+        name: 'Custom domain',
+        isIncluded: true
+    },
+    {
+        name: '24 hours support',
+        isIncluded: true
+    },
+    {
+        name: 'Admin tools',
+        isIncluded: false
+    },
+    {
+        name: 'Colaboration tools',
+        isIncluded: false
+    },
+    {
+        name: 'User management',
+        isIncluded: false
+    }
+]
+
+const teamPlanItems: PricingPlanItem[] = [
+    {
+        name: '2 GB of space',
+        isIncluded: true
+    },
+    {
+        name: '14 days of backups',
+        isIncluded: true
+    },
+    {
+        name: 'Social integrations',
+        isIncluded: true
+    },
+    {
+        name: 'Client billing',
+        isIncluded: true
+    },
+    {
+        name: 'Remote access',
+        isIncluded: true
+    },
+    {
+        name: 'Custom domain',
+        isIncluded: true
+    },
+    {
+        name: '24 hours support',
+        isIncluded: true
+    },
+    {
+        name: 'Admin tools',
+        isIncluded: true
+    },
+    {
+        name: 'Colaboration tools',
+        isIncluded: true
+    },
+    {
+        name: 'User management',
+        isIncluded: true
     }
 ]
 </script>
