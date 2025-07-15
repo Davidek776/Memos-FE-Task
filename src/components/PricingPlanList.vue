@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center border-2 border-[#fff5] rounded-[10px] pt-7 md:pt-16 pb-7 md:pb-14 px-[20%] md:px-[4%]">
-        <div class="">
+        <div class="flex flex-col items-center sm:items-start">
             <h3 class="text-lg lg:text-[22px] font-medium">{{ pricingPlan.type }}</h3>
             <p class="text-5xl lg:text-6xl font-bold inline-flex items-start py-8">
                 {{ pricingPlan.price }}
@@ -22,7 +22,7 @@
                 </li>
             </ul>
             <slot>
-                <button class="bg-transparent border-2 border-[#fff5] rounded-[100px] px-10 lg:px-15 py-3 lg:py-4 hover:bg-[#fff] hover:text-zinc-900 transition duration-400 ease-in-out cursor-pointer">
+                <button class="bg-transparent border-2 border-[#fff5] rounded-[100px] px-5 sm:px-10 lg:px-15 py-2 sm:py-3 lg:py-4 hover:bg-[#fff] hover:text-zinc-900 transition duration-400 ease-in-out cursor-pointer">
                     <p class="text-lg lg:text-xl font-medium">Get Started</p>
                 </button>
             </slot>

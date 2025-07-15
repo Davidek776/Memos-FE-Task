@@ -2,12 +2,12 @@
    <div
     class="bg-[url('@/assets/Action_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[2.314] bg-[#2e1893d9] bg-blend-lighten flex flex-col items-center justify-center py-10 md:py-0"
     >
-        <h2 class="text-4xl lg:text-6xl font-bold text-center">
+        <h2 class="text-2xl sm:text-4xl lg:text-6xl font-bold text-center">
             Easy to setup. <br>
             Easy to maintain
         </h2>
 
-        <p class="text-lg lg:text-[22px] w-130 pt-10 text-center font-medium">
+        <p class="text-sm sm:text-lg lg:text-[22px] sm:w-130 pt-10 text-center font-medium px-5 sm:px-0">
         Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework for faster and easier web development.
         </p>
         <div class="flex gap-7 pt-14">

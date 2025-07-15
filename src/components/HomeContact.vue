@@ -3,14 +3,14 @@
     class="bg-[url('@/assets/Contact_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[1440/770] bg-[#2e189378] bg-blend-lighten flex-col lg:flex-row lg:flex items-center justify-center gap-22.5 py-10 lg:py-0"
     >
     <div class="flex justify-center">
-        <div class="flex flex-col items-start lg:items-center lg:block pb-16 lg:pb-0">
-            <h2 class="text-xl sm:text-4xl lg:text-[42px] font-bold">Let’s Keep in Touch</h2>
-            <p class="text-xs sm:text-lg lg:text-[22px]font-medium w-100 pt-7">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
-            <a href="tel:15555055050" class="flex text-lg gap-4 pt-13">
+        <div class="flex flex-col items-start lg:items-center lg:block pb-16 lg:pb-0 px-5 sm:px-0">
+            <h2 class="text-lg sm:text-4xl lg:text-[42px] font-bold">Let’s Keep in Touch</h2>
+            <p class="text-base sm:text-lg lg:text-[22px]font-medium sm:w-100 pt-7 ">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+            <a href="tel:15555055050" class="flex items-center text-base sm:text-lg gap-4 pt-13">
                 <font-awesome-icon icon="fa-solid fa-phone text-base text-base lg:text-lg" />
                 <p class="text-sm lg:text-base">+1 555 505 5050</p>
             </a>
-            <a href="mailto:info@designmodo.com" class="flex text-base lg:text-lg gap-4 pt-8">
+            <a href="mailto:info@designmodo.com" class="flex items-center text-sm sm:text-base lg:text-lg gap-4 pt-8">
                 <font-awesome-icon icon="fa-solid fa-envelope text-lg" />
                 <p class="text-sm lg:text-base">info@designmodo.com</p>
             </a>
@@ -25,14 +25,14 @@
     </div>
         <div class="flex justify-center">
             <div class="bg-white rounded-[10px] pt-14.5 px-12.5 flex flex-col items-center w-120 lg:w-auto">
-                <div class="flex justify-center items-center gap-7.5">
+                <div class="flex justify-center items-center gap-7.5 w-full">
                     <div>
                         <p class="text-[#1e0e62] text-xs md:text-sm pb-1.5 font-bold tracking-widest">YOUR NAME</p>
                         <input 
                             type="text" 
                             placeholder="First name" 
                             v-model="form.name"
-                            class="outline-[#ebeaed] outline-2 rounded-4xl w-50 h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] pl-6"
+                            class="outline-[#ebeaed] outline-2 rounded-4xl w-full sm:w-50 h-12 placeholder:text-[#15143966]  focus:outline-stone-400 text-lg text-[#15143966] text-center sm:text-left sm:pl-6"
                         >
                         <p v-if="v$.form.name.$error" class="text-red-500 text-sm">Name is required.</p>
                     </div>
