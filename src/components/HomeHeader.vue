@@ -33,9 +33,7 @@ import Menubar from "primevue/menubar";
 
 const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
 
 const items = ref([

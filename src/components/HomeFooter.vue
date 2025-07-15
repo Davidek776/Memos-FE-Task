@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="flex flex-col lg:flex-row gap-7 lg:gap-0 justify-between py-12">
-           <div class="flex flex-col sm:flex-row gap-7">
+            <div class="flex flex-col sm:flex-row gap-7">
                 <a href="" @click.prevent="" class="text-sm lg:text-base font-normal">Tour</a>
                 <a href="" @click.prevent="" class="text-sm lg:text-base font-normal">Features</a>
                 <a href="" @click.prevent="" class="text-sm lg:text-base font-normal">Pricing Plans</a>

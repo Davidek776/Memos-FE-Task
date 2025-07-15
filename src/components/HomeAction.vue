@@ -13,7 +13,7 @@
             <button class="bg-[#ea3223] rounded-full w-12 lg:w-17 h-12 lg:h-17 hover:bg-red-400 transition duration-400 ease-in-out cursor-pointer">
                 <font-awesome-icon icon="fa-solid fa-play" class="text-base"/>
             </button>
-             <button class="bg-[#25dac5] rounded-[100px] px-8 lg:px-13 lg:py-5 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer">
+            <button class="bg-[#25dac5] rounded-[100px] px-8 lg:px-13 lg:py-5 hover:bg-teal-300 transition duration-400 ease-in-out cursor-pointer">
                 <p class="text-lg lg:text-xl font-medium">Get Started</p>
             </button>
         </div>
