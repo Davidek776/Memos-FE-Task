@@ -30,7 +30,7 @@
 <script setup lang="ts">
 import Carousel from 'primevue/carousel'; 
 import PricingPlanList from './PricingPlanList.vue';
-import type { PricingPlan } from './HomePricing.vue';
+import type { PricingPlan } from '../HomePricing.vue';
 
 defineProps<{
     pricingPlans: PricingPlan[]

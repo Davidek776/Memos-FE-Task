@@ -21,8 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import PricingPlanList from './PricingPlanList.vue'
-import PricingCarousel from './PricingCarousel.vue'
+import PricingPlanList from './home-pricing-components/PricingPlanList.vue'
+import PricingCarousel from './home-pricing-components/PricingCarousel.vue'
 
 export type PricingPlanItem = {
     name: string

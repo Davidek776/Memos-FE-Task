@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PricingPlan } from './HomePricing.vue';
+import type { PricingPlan } from '../HomePricing.vue'
 
 defineProps<{
     pricingPlan: PricingPlan
