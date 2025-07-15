@@ -1,7 +1,9 @@
 <template>
     <div class="bg-[#2f1893] flex flex-col items-center justify-center py-25" id="pricingSection">
         <h1 class="text-2xl sm:text-4xl lg:text-[42px] font-bold ">Plans & Pricing</h1>
-        <p class="text-base sm:text-lg lg:text-[22px] font-medium sm:w-146 pt-7.5 text-center px-5 sm:px-0">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
+        <p class="text-base sm:text-lg lg:text-[22px] font-medium sm:w-146 pt-7.5 text-center px-5 sm:px-0">
+            Startup Framework is free forever — you only pay for custom domain hosting or to export your site.
+        </p>
         <div class="hidden md:flex w-full gap-7.5 justify-center pt-13.5 ">
             <Pricing-plan-list :pricingPlan="starterPlan"/>
             <Pricing-plan-list :pricingPlan="profesionalPlan">
@@ -11,12 +13,11 @@
             </Pricing-plan-list>
             <Pricing-plan-list :pricingPlan="teamPlan"/>
         </div>
-         <Pricing-carousel 
+        <Pricing-carousel 
             :pricingPlans="allPricingPlans"
             class="md:hidden" 
         />
     </div>
-   
 </template>
 
 <script setup lang="ts">

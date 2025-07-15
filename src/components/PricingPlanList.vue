@@ -36,5 +36,4 @@ import type { PricingPlan } from './HomePricing.vue';
 defineProps<{
     pricingPlan: PricingPlan
 }>()
-
 </script>

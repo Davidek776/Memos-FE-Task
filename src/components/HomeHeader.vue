@@ -1,7 +1,7 @@
 <template>
     <div class="bg-[url('@/assets/Header_Image.svg')] bg-no-repeat bg-center bg-cover aspect-[28/17] bg-[#2e1893d9] bg-blend-lighten flex flex-col items-center justify-around lg:justify-start">
         <div class="card sm:hidden absolute left-0 top-0">
-            <Menubar :model="items" class=" bg-amber-50"/>
+            <Menubar :model="items" class="bg-amber-50"/>
         </div>
         <div class="hidden sm:flex justify-center items-center lg:pt-21 gap-11">
             <a href="" class="text-base lg:text-lg font-medium" @click.prevent="">Home</a>
@@ -64,7 +64,6 @@ const items = ref([
         label: 'Behance',
     },
     ]);
-
 </script>
 
 <style scoped>

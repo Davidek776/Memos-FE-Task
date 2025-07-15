@@ -6,9 +6,8 @@
             Easy to setup. <br>
             Easy to maintain
         </h2>
-
         <p class="text-sm sm:text-lg lg:text-[22px] sm:w-130 pt-10 text-center font-medium px-5 sm:px-0">
-        Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework for faster and easier web development.
+            Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework for faster and easier web development.
         </p>
         <div class="flex gap-7 pt-14">
             <button class="bg-[#ea3223] rounded-full w-12 lg:w-17 h-12 lg:h-17 hover:bg-red-400 transition duration-400 ease-in-out cursor-pointer">
